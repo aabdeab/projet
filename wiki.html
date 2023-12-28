@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<head>
+<title>Al Farah restaurant</title>
+<link rel="icon" href="images/1.jpg">
+
+</head>
+<style>
+  
+
+
+
+.pain1 {
+    width: 300px;
+    height: 60px;
+    background: #f5b730;
+    margin: 5px auto 5px auto;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border: 5px solid #81342c;
+    border-bottom: 1px solid #81342c;
+  }
+.pain1 div{
+     display: inline-block;
+     margin: 15px;
+     margin-left: 30px;
+     font-size:smaller;
+     background-color: aliceblue;
+     width: fit-content;
+     height: 10px;
+    }
+ .pain2 {
+    background: #fcb415;
+    margin: -5px auto 5px auto;
+    border-radius: 10px;
+    border-bottom: 5px solid #81342c;
+    border-left: 5px solid #81342c;
+    border-right: 5px solid #81342c;
+    border-top:1px solid #81342c;
+    width: 300px;
+    height: 45px;
+    
+  }
+.ketchup {
+    width: 310px;
+    height: 5px;
+    background: red;
+    border-radius: 10px;
+    margin: -5px auto 5px auto;
+    border: 1px solid #81342c;
+    display: none;
+
+}
+.onion {
+    width: 310px;
+    height: 15px;
+    background: none;
+    border-radius: 10px;
+    margin: -7px auto 5px auto;
+    
+    
+
+}
+#span1{
+    width: 105px;
+    background-color: rgb(173, 50, 173);
+    display: inline-block;
+    border-radius: 10px;
+    height: 15px;
+    border: 0.5px solid white;
+    
+}
+#span2{
+    width: 105px;
+    height: 15px;
+    background-color: rgb(173, 50, 173);
+    position: relative;
+    margin-left: 90px;
+    display: inline-block;
+    border-radius: 10px;
+    border: 0.5px solid white;
+    
+}
+#span3{
+    width: 130px;
+    background-color: rgb(255, 0, 0);
+    display: inline-block;
+    border-radius: 5px;
+    height: 12px;
+    border:0.5px solid rgb(99, 3, 3);
+    
+}
+#span4{
+    width: 130px;
+    height: 12px;
+    background-color: rgb(255, 6, 6);
+    position: relative;
+    margin-left: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    border:0.5px solid rgb(99, 3, 3);
+    
+}
+.Tomate {
+    width: 335px;
+    height: 14px;
+    background: none;
+    border-radius: 10px;
+    margin: -5px auto 5px auto;
+    border: 1px solid none;
+}
+
+.cheese {
+    width: 360px;
+    height: 10px;
+    background: #ffcd4d;
+    border-radius: 10px;
+    margin: -5px auto 5px auto;
+    border: 1px solid rgb(255, 208, 0);
+}
+
+.beef {
+    width: 320px;
+    height: 50px;
+    background:brown;
+    border-radius: 10px;
+    margin: -5px auto 5px auto;
+    border: 2px solid #81342c;
+    
+}
+.beef div{
+    display: inline-block;
+    margin: 15px;
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size:smaller;
+    background-color: black;
+     width: 8px;
+     height: 40px;
+    }
+
+.chicken {
+    width: 320px;
+    height: 40px;
+    background:rgb(186, 105, 23);
+    border-radius: 10px;
+    margin: -5px auto 5px auto;
+    border: 2px solid #81342c;
+    
+}
+
+.salad {
+    width: 340px;
+    height: 15px;
+    background: #11da1b;
+    border-radius: 10px;
+    margin: -5px auto 5px auto;
+    border: 1px solid #81342c;
+    
+}
+
+.sauce {
+    width: 330px;
+    height: 10px;
+    background: rgb(202, 166, 48);
+    border-radius: 10px;
+    margin: -5px auto 5px auto;
+    border: 1px solid #81342c;
+    
+    
+}
+.ingredients {
+    margin: 30px auto;
+    width: 400px;
+    height: 380px;
+    background-image: url(images/ardoise.jpg);
+    background-size:445px 420px ;
+    padding: 20px;
+    
+}
+
+.introduction {
+    margin-top: -40px;
+    width: 400px;
+    height: 150px;
+    margin-left: 150px;
+
+    background: #fced15;
+    
+    
+}
+
+.moins {
+    background: rgb(255, 255, 255);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding-top: 2px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.moins:hover{
+    background-color: rgb(147, 145, 145);
+}
+
+.moins:disabled{
+    background: rgba(255,255,255, 0.4);
+}
+.plus:disabled{
+    background: rgba(255,255,255, 0.4);
+}
+
+.plus {
+    background: rgb(255, 255, 255);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.plus:hover{
+    background-color: rgb(128, 126, 126);
+}
+p {
+    color: #ffffff;
+    display: inline-block;
+    margin: 0px;
+}
+.actif {
+    display: block;
+}
+body{
+  background-color: aqua;
+  background-image: url(images/background2.jpg);
+  background-size: 1000px 1300px;
+}
+.submitt{
+  background-color: #04AA6D;
+  border: none;
+  color: rgb(253, 250, 250);
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-left: 150px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right:150px;
+}
+.submitt:hover{
+    background-color: #011e13;
+}
+.Dish{
+    width: 600px;
+    height: 15px;
+    background: #ffffff;
+    margin: -7px auto 5px auto;
+    border-radius: 10px;
+    border-style:groove;
+}
+.hello1 {
+    padding-top: 50px; 
+    width: 700px;
+    margin: auto;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    text-align: center;
+    height: 1200px;
+    background-image: url(images/kitchen1.jpg);
+    background-size: 700px 1200px;
+    flood-opacity: 0.5;
+    
+    
+}
+.hi {
+    margin-top: 12px;
+}
+.nonactif {
+    display: none;
+}
+</style>
+<body>
+<div class="hello1" style="border: double ;background-color: aliceblue ;">
+  <div class="introduction"><h1 style="font-size: xx-large;">Welcome to our virtuel kitchen</h1><h2>build your own burger here!!</h2></div>
+  <img src="images/GIF chef.gif" style="height: 300px;margin-top: 20px;" >
+  <div class="pain1 ">
+    <div>.</div>
+    <div>.</div>
+    <div>.</div>
+    <div>.</div>
+    <div>.</div>
+  </div>
+  
+  <div class="Tomate nonactif">
+    <div id="span3">.</div>
+    <div id="span4">.</div>
+  </div>
+  <div class="onion  nonactif">
+    <div id="span1">.</div>
+    <div id="span2">.</div>
+  </div>
+  <div class="cheese  nonactif"></div>
+  <div class="ketchup  "></div>
+  <div class="beef  nonactif">
+    <div>.</div>
+    <div>.</div>
+    <div>.</div>
+    <div>.</div>
+    <div>.</div>
+    <div>.</div>
+  </div>
+  <div class="chicken  nonactif"></div>
+  <div class="salad  nonactif"></div>
+  <div class="sauce  nonactif" ></div>
+  <div class="pain2  "></div>
+  <div class="Dish"></div>
+  <div class="ingredients">
+    <p style="font-style: italic; margin-top: 10px;font-size: medium;">INGREDIENTS</p>
+  <div class=" hi ketchup_ingredient"><button disabled class="moins">-</button><p style="font-style: oblique;">ketchup</p><button class="plus">+</button></div> 
+  <div class="  hi Tomate_ingredient"><button disabled class="moins">-</button><p style="font-style: oblique;">Tomate</p><button class="plus">+</button></div> 
+  <div class=" hi onion_ingredient"><button disabled class="moins">-</button><p style="font-style: oblique;">onion</p><button class="plus">+</button></div>
+  <div class=" hi cheese_ingredient"><button disabled class="moins">-</button><p style="font-style: oblique;">cheese</p><button class="plus">+</button></div> 
+  <div class=" hi beef_ingredient"><button disabled class="moins">-</button><p style="font-style: oblique;">beef</p><button class="plus">+</button></div> 
+  <div class=" hi chicken_ingredient"><button disabled class="moins">-</button><p style="font-style: oblique;">chicken</p><button class="plus">+</button></div> 
+  <div class=" hi salad_ingredient"><button disabled class="moins">-</button><p style="font-style: oblique;">salad</p><button class="plus">+</button></div> 
+  <div class=" hi sauce_ingredient"><button disabled class="moins">-</button><p style="font-style: oblique;">sauce</p><button class="plus">+</button></div> 
+  <div><a href="contact.html"><button class="submitt">submitt</button></a></div>
+  </div>
+  </div>
+</body>
+<script>
+   let submitt = document.querySelector('.submitt'); 
+        let ketchup = document.querySelector('.ketchup');    
+        let ketchupMoins = document.querySelector('.ketchup_ingredient').querySelector('.moins')
+        ketchupMoins.addEventListener('click', function(x){
+            console.log(x.disabled)
+            ketchup.style.display='none';
+            ketchupPlus.disabled = false;
+            ketchupMoins.disabled = true;
+            
+        })
+
+        
+        let ketchupPlus = document.querySelector('.ketchup_ingredient').querySelector('.plus')
+        ketchupPlus.addEventListener('click', function(){
+            ketchup.style.display='block';
+                ketchupPlus.disabled = true;
+                ketchupMoins.disabled = false;
+                
+        })
+
+        
+            
+
+        let Tomate = document.querySelector('.Tomate');    
+        let TomateMoins = document.querySelector('.Tomate_ingredient').querySelector('.moins')
+        TomateMoins.addEventListener('click', function(){
+            Tomate.classList.remove('actif');
+            Tomate.classList.add('nonactif');
+            TomatePlus.disabled = false;
+            TomateMoins.disabled = true;
+        })
+        let TomatePlus = document.querySelector('.Tomate_ingredient').querySelector('.plus')
+        TomatePlus.addEventListener('click', function(){
+            Tomate.classList.remove('nonactif');
+                Tomate.classList.add('actif');
+            TomatePlus.disabled = true;
+            TomateMoins.disabled = false;
+            
+        })
+        let cheese = document.querySelector('.cheese');    
+        let cheeseMoins = document.querySelector('.cheese_ingredient').querySelector('.moins')
+        cheeseMoins.addEventListener('click', function(){
+            cheese.classList.remove('actif');
+            cheese.classList.add('nonactif');
+            cheesePlus.disabled = false;
+            cheeseMoins.disabled = true;
+        })
+        
+        let cheesePlus = document.querySelector('.cheese_ingredient').querySelector('.plus')
+        cheesePlus.addEventListener('click', function(){
+            cheese.classList.remove('nonactif');
+                cheese.classList.add('actif');  
+                cheesePlus.disabled = true;
+                cheeseMoins.disabled = false;
+                
+                
+        })
+        let beef = document.querySelector('.beef');    
+        let beefMoins = document.querySelector('.beef_ingredient').querySelector('.moins')
+        beefMoins.addEventListener('click', function(){
+            beef.classList.remove('actif');
+            beef.classList.add('nonactif');
+            beefPlus.disabled = false;
+            beefMoins.disabled = true;
+            
+        })
+        let beefPlus = document.querySelector('.beef_ingredient').querySelector('.plus')
+        beefPlus.addEventListener('click', function(){
+            if(chickenPlus.disabled==true){
+            alert("chicken + beef ? you can choose just one of them !")
+           }
+           else{
+            beef.classList.remove('nonactif');
+                beef.classList.add('actif');
+                beefPlus.disabled = true;
+                beefMoins.disabled = false;}
+        })
+        let chicken = document.querySelector('.chicken');    
+        let chickenMoins = document.querySelector('.chicken_ingredient').querySelector('.moins')
+        chickenMoins.addEventListener('click', function(){
+            chicken.classList.remove('actif');
+            chicken.classList.add('nonactif');
+            chickenPlus.disabled = false;
+            chickenMoins.disabled = true;
+            
+        })
+        let chickenPlus = document.querySelector('.chicken_ingredient').querySelector('.plus')
+        chickenPlus.addEventListener('click', function(){
+           if(beefPlus.disabled==true){
+            alert("beef + chicken ? you can choose just one of them !")
+            
+           }
+           else{
+            chicken.classList.remove('nonactif');
+                chicken.classList.add('actif');
+                chickenPlus.disabled = true;
+                chickenMoins.disabled = false;}
+               
+                
+        })
+        let onion=document.querySelector('.onion');
+        let onionMoins = document.querySelector('.onion_ingredient').querySelector('.moins')
+        onionMoins.addEventListener('click', function(){
+            
+            onion.classList.remove('actif');
+            onion.classList.add('nonactif');
+            onionPlus.disabled = false;
+            onionMoins.disabled = true;
+        })
+         
+        let onionPlus = document.querySelector('.onion_ingredient').querySelector('.plus')
+        onionPlus.addEventListener('click', function(){
+            
+            onion.classList.remove('nonactif');
+                onion.classList.add('actif');
+                onionPlus.disabled = true;
+                onionMoins.disabled = false;
+        })
+        let salad = document.querySelector('.salad');    
+        let saladMoins = document.querySelector('.salad_ingredient').querySelector('.moins')
+        saladMoins.addEventListener('click', function(){
+            salad.classList.remove('actif');
+            salad.classList.add('nonactif');
+            saladPlus.disabled = false;
+            saladMoins.disabled = true;
+        })
+        let saladPlus = document.querySelector('.salad_ingredient').querySelector('.plus')
+        saladPlus.addEventListener('click', function(){
+            salad.classList.remove('nonactif');
+                salad.classList.add('actif');
+                saladPlus.disabled = true;
+                saladMoins.disabled = false;
+        })
+        
+        
+
+        let sauce = document.querySelector('.sauce');    
+        let sauceMoins = document.querySelector('.sauce_ingredient').querySelector('.moins')
+        sauceMoins.addEventListener('click', function(){
+            sauce.classList.remove('actif');
+            sauce.classList.add('nonactif');
+            saucePlus.disabled = false;
+            sauceMoins.disabled = true;
+        })
+        let saucePlus = document.querySelector('.sauce_ingredient').querySelector('.plus')
+        saucePlus.addEventListener('click', function(){
+            
+            sauce.classList.remove('nonactif');
+            sauce.classList.add('actif');
+            saucePlus.disabled = true;
+            sauceMoins.disabled = false;
+                
+        })
+       
+        
+    
+    function displayButton() {
+         if (
+        mustardPlus.disabled == true ||
+        meatPlus.disabled == true ||
+        onionPlus.disabled == true||
+        saladPlus.disabled == true ||
+        cheesePlus.disabled == true ||
+        ketchupPlus.disabled == true ||
+        baconPlus.disabled ===true
+    ) {
+        submitt.classList(display)
+    
+}
+}
+        
+
+
+</script>
+</div>
